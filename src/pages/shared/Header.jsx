@@ -4,6 +4,7 @@ import moment from "moment";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
 import { FaUser } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="py-5">
@@ -30,9 +31,15 @@ const Header = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mx-auto">
-                <Nav.Link href="#features">Home</Nav.Link>
-                <Nav.Link href="#features">About</Nav.Link>
-                <Nav.Link href="#pricing">Carer</Nav.Link>
+                <Nav.Link>
+                  <Link to="/">Home</Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link to="/">About</Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link to="/">Carer</Link>
+                </Nav.Link>
               </Nav>
               <Nav className="d-flex gap-4">
                 <p>

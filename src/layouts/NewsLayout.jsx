@@ -1,6 +1,6 @@
-import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Header from "../pages/shared/Header";
+import { Outlet } from "react-router-dom";
 import RightNav from "../pages/shared/RightNav/RightNav";
 import Footer from "../pages/shared/Footer";
 
