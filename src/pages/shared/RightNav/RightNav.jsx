@@ -46,13 +46,19 @@ const RightNav = () => {
         </ListGroup>
       </div>
       <QZone />
-      <div>
-        <img src={bg} alt="" />
-        <p className="">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo ab
-          vitae quidem, laudantium cumque quia fugit distinctio quaerat facere
-          tenetur natus totam odio laborum earum fugiat et? Officia, nihil fuga!
-        </p>
+      <div className="position-relative">
+        <div className="position-relative">
+          <img src={bg} className="" alt="" />
+        </div>
+        <div className="position-absolute top-0 text-white left-0 right-0 p-2">
+          <p className="">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
+            ab vitae quidem, laudantium cumque quia fugit distinctio quaerat
+            facere tenetur natus totam odio laborum earum fugiat et? Officia,
+            nihil fuga!
+          </p>
+          <button className="btn btn-primary">Get Started</button>
+        </div>
       </div>
     </div>
   );

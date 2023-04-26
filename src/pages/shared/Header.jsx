@@ -3,9 +3,10 @@ import logo from "../../assets/logo.png";
 import moment from "moment";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
+import { FaUser } from "react-icons/fa";
 const Header = () => {
   return (
-    <div>
+    <div className="py-5">
       <div className="text-center">
         <img src={logo} alt="logo" />
         <p>
@@ -16,7 +17,7 @@ const Header = () => {
         <p>{moment().format("dddd, MMMM D, YYYY")}</p>
       </div>
       <Container>
-        <div className="d-flex">
+        <div className="d-flex mb-4">
           <button className="btn btn-danger">Latest</button>
           <Marquee speed={50} className="text-danger">
             I can be a React component, multiple React components, or just some
@@ -33,8 +34,10 @@ const Header = () => {
                 <Nav.Link href="#features">About</Nav.Link>
                 <Nav.Link href="#pricing">Carer</Nav.Link>
               </Nav>
-              <Nav className="d-flex">
-                <p>profile</p>
+              <Nav className="d-flex gap-4">
+                <p>
+                  <FaUser></FaUser>
+                </p>
                 <Button variant="dark">Dark</Button>
               </Nav>
             </Navbar.Collapse>
