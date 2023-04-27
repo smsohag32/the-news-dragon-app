@@ -10,7 +10,6 @@ const LeftNav = () => {
       .then((data) => setCategories(data))
       .catch((error) => console.log(error));
   }, []);
-  console.log(categories);
   return (
     <div className="">
       <h4 className="bg-secondary p-2 text-center">All categories</h4>
