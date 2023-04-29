@@ -6,6 +6,9 @@ import EditorsInsite from "./EditorsInsite";
 
 const News = () => {
   const news = useLoaderData();
+  if (!news) {
+    return;
+  }
   const { title, details, image_url, category_id } = news;
   return (
     <div>

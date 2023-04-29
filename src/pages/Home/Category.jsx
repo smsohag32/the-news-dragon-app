@@ -9,7 +9,7 @@ const Category = () => {
     <div>
       {id && (
         <h4 className="pt-5 pb-2">
-          This Category News Found: {categoryNews.length}
+          This Category News Found: {categoryNews?.length}
         </h4>
       )}
       <div>

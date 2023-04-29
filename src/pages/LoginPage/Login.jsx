@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Container, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -35,8 +36,11 @@ const Login = () => {
           Submit
         </Button>
         <Form.Group className="mb-3">
+          <Form.Text className="text-muted"></Form.Text>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
+            Don't have and account please<Link to="/register">Register</Link>
           </Form.Text>
         </Form.Group>
       </Form>
